@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+
+    <h1> Game Title: <%=gameTitlePickle %> </h1>
+        <% if(gameTitlePickle == "fortnite") { %>
+            <p>Description: Fortnite Battle Royale is the FREE 100-player PvP mode in Fortnite. One giant map. A battle bus. Fortnite building skills and destructible environments combined ...</p>
+       <% } else { %>
+            <p> There is no description for this game. Try Fortnite. </p>
+       <% } %>
+    <h2> Game Creator: <%=gameCreatorPickle %> </h2>
+    
+<%- include("partials/footer.ejs") %>
